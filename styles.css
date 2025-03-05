@@ -126,7 +126,7 @@ section {
 
 section h2 {
     color: #007acc;
-    font-size: 1.6rem;
+    font-size: 1.4rem; /* Taille des sous-parties réduite */
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
