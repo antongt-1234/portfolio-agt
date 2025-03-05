@@ -1,0 +1,188 @@
+/* Global : Fond et texte adaptés à un thème sombre */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0f1115, #1a1d21);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Message de bienvenue */
+.welcome {
+    background: linear-gradient(to right, #007acc, #00b8d4);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 8px;
+}
+
+.welcome h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.welcome p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.welcome:hover p {
+    opacity: 1;
+}
+
+/* Conteneur pour la barre latérale et le contenu principal */
+.container {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    padding: 0; /* Ajusté pour éviter des espaces indésirables */
+}
+
+/* Barre latérale (nav) fixée à gauche, commencant plus bas */
+nav {
+    background: linear-gradient(to bottom, #0f1115, #1a1d21);
+    color: #ffffff;
+    width: 250px;
+    padding: 0; /* Ajusté pour éviter des espaces indésirables */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 60px; /* Poussée de la barre latérale vers le bas */
+    left: 0;
+    bottom: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+nav ul li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+nav ul li:hover {
+    background: #2a2e33;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover a {
+    color: #007acc;
+}
+
+nav ul li i {
+    margin-right: 10px;
+}
+
+/* Contenu principal avec un fond sombre assorti */
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #1a1d21;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px; /* Cette marge est toujours nécessaire pour faire de la place pour la barre latérale */
+}
+
+/* Section */
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #2a2e33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section h2 {
+    color: #007acc;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+section h2 i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+section ul li i {
+    margin-right: 15px;
+    font-size: 1.4rem;
+}
+
+/* Footer */
+footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: #888;
+    margin-top: auto; /* Le "Droit réservé" se place au bas de la page sans créer de nouvel écart */
+}
+
+/* Style du bouton LinkedIn adapté au thème sombre */
+.linkedin-btn {
+    background-color: #007acc;
+    color: white;
+    border: 2px solid #007acc;
+    padding: 8px 16px; /* Taille ajustée */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background-color: #005fa3;
+    color: #ffffff;
+}
+
+.linkedin-btn:focus {
+    outline: none;
+}
